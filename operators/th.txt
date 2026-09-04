@@ -1,0 +1,81 @@
+Operators
+---------
+Perform an operation / task
+
+a     +     b
+
++     -> operator 
+a , b -> operand 
+
+Types 
+-----
+1. Arithmetic Operators
+    + 
+    -  
+    *  
+    / (returns quotient)
+        int / int = int 
+        10 / 2   = 5
+        (float) 11 / 2   = 5.5 X   5
+
+        int a = 11;
+        int b = 2;
+        float c = a / b;
+
+        int / float = float  , float / int = float , float / float = float 
+        12.2 / 2 = 6.1
+    
+
+    % (modulus -- returns remainder) (only works with int)
+
+
+2. Relational Operators   0(false)  , 1 (true)  (conditionals) 
+    >     5 > 6 -- 0      7 > 6 -- 1    6 > 6 -- 0
+    <     5 < 6 -- 1      7 < 6 -- 0    6 < 6 -- 0
+    >=    5 >= 6 -- 0     7 >= 6 -- 1   6 >= 6 -- 1    
+    <=    5 <= 6 -- 1     7 <= 6 -- 0   6 <= 6 -- 1
+    ==    5 == 6 -- 0     6 == 6 -- 1
+    !=    5 != 6 -- 1     6 != 6 -- 0
+
+
+3. Assignment Operators (loop)
+    =
+    +=   sum += i => sum = sum + i
+    -=
+    *=
+    /=
+    %=
+    <<=
+    >>=
+    ^=
+
+4. Logical Operators 
+    AND && -> returns true when both conditions are true  
+    OR  || -> returns true when any one of the condition is true 
+    NOT !  -> alters (true -> false) (false -> true)
+
+
+5. Increment /decrement operator 
+    ++ , -- 
+    i++ -> i = i + 1
+    i-- -> i = i - 1
+6. Bitwise operator
+7. Special operator 
+    size of 
+    &
+
+<===========================>
+Types of Operator based on number of operands
+--------------------------------------------
+1. unary operator 
+    -> one operand 
+    -> ++ , -- , !
+
+2. Binary 
+    -> Arithemtic , relational , Assignment , Logical and , Logical or , bitwise 
+
+3. ternary
+    -> Symbol --> ?:
+    condition ? "true" : "false"
+
+    

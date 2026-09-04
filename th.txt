@@ -1,0 +1,9 @@
+scope ascii
+
+harsh 
+
+ASCII American standard code for information interchange 
+
+H - 72
+
+The binary equivalent of the decimal number 72 is 1001000.

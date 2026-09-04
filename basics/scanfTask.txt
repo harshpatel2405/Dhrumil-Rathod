@@ -1,0 +1,50 @@
+Scanf Task
+----------
+
+1) Input your name and print it.
+2) Input age from the user and print it.
+3) Input marks of three subjects from user and print it.
+4) Input roll no from user and print it.
+5) Input two integers and print their sum and product.
+
+6) Input your name and surname and print it.
+7) Input three integers in a single line (e.g. 10 20 30) and print their average. 
+
+9) Ask the user for principal, rate, and time. Print Simple Interest.
+10) Input temperature in Celsius. Convert to Fahrenheit.
+
+11) Input 5 subject marks. Calculate total, average, and percentage.
+    (GotmarksTotal/Actual total) * 100
+
+12) Take 3 inputs: name, city, pin-code (e.g. Harsh Ahmedabad 382415) and print it.
+13) Input name, surname , marks , age , roll no from user and print it in proper format.
+14) Input mass and acceleration → calculate force (F = m * a).
+15) Input base and height → calculate area of parallelogram.
+
+16) Input radius and height → calculate volume of cone.
+17) Input time in format HH:MM and print hours and minutes separately.
+18) Input a date in format DD-MM-YYYY and print day, month, year separately.
+
+19)  Print a bill format:
+
+============== INVOICE =============
+Item        Qty     Price     Total
+------------------------------------
+Notebook     2       40        80
+Pen          5       10        50
+Eraser       3        5        15
+------------------------------------
+TOTAL:                         145
+====================================
+
+20) Print a formatted ID Card:
+
++--------------------------+
+|      STUDENT ID CARD     |
+| Name   : Harsh Patel     |
+| Class  : TY BSc CS       |
+| Roll   : 23              |
++--------------------------+
+
+
+1 , 2, 3, ,4 ,5 ,6 7, 11

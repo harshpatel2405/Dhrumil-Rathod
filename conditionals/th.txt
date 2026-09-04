@@ -1,0 +1,23 @@
+Conditionals
+------------
+Condition -> true or false
+
+1. if_else 
+    if(condition)
+    {
+        logic -- print , scan , assign
+    }else
+    {
+        logic -- print , scan , assign
+    }
+else is optional 
+
+else if
+
+
+    if()
+    {}
+    else if(){}
+    else if(){}
+    else {}
+
