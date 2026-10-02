@@ -1,0 +1,229 @@
+=== C PROGRAMMING PRACTICAL ASSIGNMENT: SWITCH-CASE & CONDITIONAL LOGIC ===
+----------------------------------------------------------------------------
+
+<===================================================================================>
+Question 1 — Smart Energy Billing & Tariff Tier Selection
+Difficulty: Medium
+Problem Statement:
+An electricity distribution board wants to automate its consumer billing system based on the consumer type and monthly power consumption units. The system must process different billing rules for domestic and commercial users, incorporating progressive unit slabs and conditional surcharges.
+Requirements:
+1. Accept consumer type (1 for Domestic, 2 for Commercial).
+2. Based on the consumer type, evaluate the monthly units consumed using tiered brackets.
+3. For Domestic users: Tier 1 (0–100 units), Tier 2 (101–300 units), Tier 3 (Above 300 units).
+4. For Commercial users: Tier 1 (0–150 units), Tier 2 (151–400 units), Tier 3 (Above 400 units).
+5. Apply fixed charges and variable energy rates depending on the selected tier.
+6. Include a validation check: If units consumed are negative, display an error message and terminate.
+7. Combine with an if-else condition to apply an additional 5% fuel adjustment surcharge only if the total consumption exceeds 500 units regardless of the consumer type.
+Inputs: Consumer type choice, units consumed.
+Validation: Units cannot be less than 0. Invalid consumer category choice must trigger a default error handler.
+Expected Behavior for Invalid Choices: Print "Invalid Consumer Category Selected" and exit.
+<===================================================================================>
+
+Question 2 — University Examination Registration & Fee Processing Portal
+Difficulty: Medium
+Problem Statement:
+A university examination cell requires a portal for students to register for their end-term examinations, calculate their exam fees based on student status, and evaluate late fee penalties based on the date of registration.
+Requirements:
+1. Select student enrollment category (1 for Regular Student, 2 for Lateral Entry, 3 for Professional/External).
+2. Select the semester category (1 for Odd Semesters 1/3/5/7, 2 for Even Semesters 2/4/6/8).
+3. Determine the base examination fee corresponding to the category and semester path.
+4. Prompt the user for the submission phase (1: Regular Window, 2: Late Window, 3: Emergency Window).
+5. Use if-else conditions alongside selection logic to check if the student has a backlog waiver; if eligible, deduct a fixed credit from the final fee.
+Inputs: Category choice, semester choice, submission phase choice, backlog waiver status (1 for Yes, 0 for No).
+Validation: Negative fee amounts or invalid phase codes must be caught by default clauses.
+Expected Behavior for Invalid Choices: Print "Invalid Registration Phase Code" and abort calculation.
+
+<===================================================================================>
+Question 3 — E-Commerce Loyalty Tier Discount & Shipping Processor
+Difficulty: Medium
+Problem Statement:
+An online retail platform needs a checkout processor that calculates final order totals by evaluating customer loyalty tier memberships, product categories, and chosen delivery speeds.
+Requirements:
+1. Select Customer Loyalty Tier (1: Bronze, 2: Silver, 3: Gold, 4: Platinum).
+2. Select Product Category being purchased (1: Electronics, 2: Apparel, 3: Groceries).
+3. Apply category-specific base discounts determined by the loyalty tier.
+4. Select delivery mode (1: Standard, 2: Express, 3: Overnight) which adds corresponding shipping surcharges.
+5. Use an if-else condition to check if the total order value after product discount crosses $200; if it does, waive the standard shipping fee completely.
+Inputs: Loyalty tier, product category, base order price, delivery mode, express preference.
+Validation: Order price must be greater than zero.
+Expected Behavior for Invalid Choices: Display "Invalid Tier or Category Code" and terminate.
+
+<===================================================================================>
+Question 4 — Railway Ticket Reservation Concession Engine
+Difficulty: Medium
+Problem Statement:
+A railway ticketing system calculates ticket pricing based on passenger demographic classifications, class of travel, and distance slabs, integrating special concession rules.
+Requirements:
+1. Select Passenger Category (1: General Adult, 2: Senior Citizen, 3: Child, 4: Military Personnel).
+2. Select Class of Travel (1: Sleeper, 2: AC 3-Tier, 3: AC 2-Tier, 4: First Class AC).
+3. Compute base fare using distance slabs (Tier A: < 500 km, Tier B: 500-1000 km, Tier C: > 1000 km).
+4. Apply category-specific concession percentages on the base fare.
+5. Use an if-else condition to verify if the travel distance exceeds 1200 km; if so, apply an additional long-distance flat travel allowance deduction.
+Inputs: Passenger category, travel class, distance in kilometers.
+Validation: Distance must be positive.
+Expected Behavior for Invalid Choices: Output "Invalid Passenger Classification or Travel Class" and exit.
+
+<===================================================================================>
+Question 5 — Hospital Outpatient Department (OPD) Consultation Scheduler
+Difficulty: Medium
+Problem Statement:
+A multi-specialty hospital management system requires a consultation fee and token allocation module based on medical departments, doctor specialization tiers, and appointment urgencies.
+Requirements:
+1. Choose Medical Department (1: Cardiology, 2: Pediatrics, 3: Orthopedics, 4: General Medicine).
+2. Choose Doctor Experience Tier within the department (1: Junior Consultant, 2: Senior Consultant, 3: Head of Department).
+3. Select Appointment Type (1: Regular OPD, 2: Emergency/Priority, 3: Follow-up Consultation).
+4. Calculate consultation fees based on department base rates multiplied by the doctor tier factor.
+5. Use an if-else check to determine if the appointment is marked as Emergency; if yes, add a mandatory emergency triage fee regardless of department.
+Inputs: Department choice, doctor tier choice, appointment type choice.
+Validation: Menu selections must strictly lie between 1 and 4 for departments and 1 and 3 for tiers/types.
+Expected Behavior for Invalid Choices: Print "Invalid Department or Tier Selection" and reset prompt.
+
+<===================================================================================>
+Question 6 — Smart Banking ATM Fast-Cash and Account Service Portal
+Difficulty: Medium
+Problem Statement:
+A banking terminal software needs a service routing module that categorizes transactions by account classification, service preference, and specific fast-cash or custom processing limits.
+Requirements:
+1. Select Account Type (1: Savings Account, 2: Current Account, 3: Salary Account).
+2. Select Service Category (1: Fast Cash Withdrawal, 2: Fund Transfer, 3: Mini Statement & Balance Inquiry).
+3. If Fast Cash is chosen, present a sub-menu of preset amounts ($20, $50, $100, $200) with account-specific daily withdrawal ceiling validations using if-else.
+4. If Fund Transfer is chosen, select destination bank type (1: Internal Bank, 2: National Clearing, 3: International Wire) with corresponding transfer fee structures.
+Inputs: Account type choice, service category choice, sub-menu transaction amount or transfer option.
+Validation: Requested withdrawal amount cannot exceed daily limits governed by account type.
+Expected Behavior for Invalid Choices: Display "Invalid Service Code or Limit Exceeded" and abort transaction.
+
+<===================================================================================>
+Question 7 — Cloud Computing Resource Allocation & Billing Manager
+Difficulty: Medium
+Problem Statement:
+A cloud infrastructure provider requires a pricing calculator that determines monthly server hosting expenses based on virtual instance tiers, operating system licensing models, and storage provisioning choices.
+Requirements:
+1. Choose Instance Tier (1: General Purpose Micro, 2: Compute Optimized Standard, 3: Memory Optimized Heavy).
+2. Choose Operating System Platform (1: Linux/Unix, 2: Windows Server, 3: RHEL Enterprise).
+3. Calculate base hourly compute cost mapped via nested choices, then scale to monthly billing (730 hours).
+4. Select Storage Add-on package (1: Standard SSD - 50GB, 2: High-Performance NVMe - 150GB, 3: Archived Blob - 500GB).
+5. Use an if-else validation check: If the computed monthly baseline exceeds $300, apply a 10% high-tier infrastructure discount automatically.
+Inputs: Instance tier choice, OS platform choice, storage package choice.
+Validation: Menu codes outside the range of 1 to 3 must be caught by default options.
+Expected Behavior for Invalid Choices: Print "Invalid Configuration Parameter" and terminate.
+
+<===================================================================================>
+Question 8 — Multi-Tier Corporate Employee Payroll and Tax Deduction System
+Difficulty: Hard
+Problem Statement:
+Design an enterprise-grade payroll calculation engine for a multi-department corporation. The system must process employee compensation by routing through department-specific pay structures, pay grade multipliers, and a dual tax regime selection framework with gross income bracket validations.
+Requirements:
+1. Main Menu: Select Department (1: Technology, 2: Human Resources, 3: Sales & Marketing).
+2. Sub-Menu (Nested Switch): Based on the department chosen, select Pay Grade Level (Levels 1 through 3, where Level 3 represents senior management). Each grade sets a distinct base salary scale.
+3. Allowance Integration: Calculate departmental allowances (Tech gets code debugging bonus, HR gets employee relations stipend, Sales gets travel commission multiplier).
+4. Tax Regime Selection: Prompt user to choose tax regime (1: Old Regime with deductions, 2: New Flat Tax Regime).
+5. Validation Logic (if-else): Combine gross salary evaluation with tax regime rules. If gross annual income under the Old Regime is below a specified threshold, invoke a tax rebate sub-routine; otherwise, compute progressive tax slabs.
+Inputs: Department choice, grade level choice, basic monthly salary input, tax regime choice, investment declaration amount (if old regime).
+Validation: Basic salary must be greater than zero. Invalid department or grade codes must trigger comprehensive error handling.
+Expected Behavior for Invalid Choices: Print "Error: Unrecognized Department Code or Pay Grade" and exit safely without printing partial payroll metrics.
+
+<===================================================================================>
+Question 9 — Automated Library Fine and Membership Renewal Complex Portal
+Difficulty: Hard
+Problem Statement:
+A university library management system needs a complex fine calculation and membership renewal module. The system must evaluate overdue books across different media categories, apply tiered penalty multipliers based on delay duration, and route users through a membership tier extension sub-menu with privilege verification.
+Requirements:
+1. Main Menu: Select Member Classification (1: Undergraduate Student, 2: Faculty Member, 3: External Research Scholar).
+2. Sub-Menu (Nested Switch): Select Overdue Material Type (1: Reference Textbooks, 2: Periodicals/Journals, 3: Multimedia CDs/Software).
+3. Fine Computation Logic: Evaluate days overdue using tiered brackets managed via switch-case and conditional bounds (e.g., Tier 1: 1–7 days, Tier 2: 8–30 days, Tier 3: > 30 days), where each tier applies an exponentially increasing daily fine rate.
+4. Membership Renewal Option: After fine settlement, prompt whether the user wants to renew their membership card (1: Standard Extension, 2: Premium Upgrade, 3: Cancel).
+5. Validation Check (if-else): If total accumulated fines exceed a critical threshold ($50), block membership renewal privileges until the balance is cleared.
+Inputs: Member classification, material type, days overdue, renewal choice.
+Validation: Days overdue cannot be negative. Invalid selection codes must be trapped cleanly.
+Expected Behavior for Invalid Choices: Print "Invalid Material Classification Code" and abort fine processing.
+
+<===================================================================================>
+Question 10 — Smart Traffic Toll Plaza Multi-Axle Dynamic Pricing & Pass Management Engine
+Difficulty: Hard
+Problem Statement:
+An automated highway toll collection system requires a dynamic pricing engine that processes vehicle structural categories, trip pass types, and axle counts, while integrating peak-hour traffic surcharges using nested conditional logic.
+Requirements:
+1. Main Menu: Select Vehicle Class (1: Light Motor Vehicle/Car, 2: Commercial Bus/Truck, 3: Multi-Axle Heavy Hauler).
+2. Sub-Menu (Nested Switch): Select Trip Pass Type (1: Single Journey, 2: Return Journey, 3: 30-Day Monthly Access Pass).
+3. Axle Count Configuration: For commercial and multi-axle vehicles, prompt for precise axle count configuration (2-axle, 4-axle, 6+ axle) which multiplies the base toll tariff.
+4. Peak-Hour Surcharge Validation (if-else): Check the entry timestamp code entered by the user. If travel falls within rush hours (Morning 08:00–11:00 or Evening 17:00–20:00), apply a mandatory 20% surge multiplier to the base toll amount.
+5. Smart Tag Discount: Check if user uses digital transponder wallet (1 for Yes, 0 for No). If Yes, provide a 5% cash-back rebate on the final computed toll.
+Inputs: Vehicle class choice, trip pass choice, axle count, time window code, transponder status.
+Validation: Axle counts must be realistic integers (>= 2). Unrecognized option codes must trigger default catch blocks.
+Expected Behavior for Invalid Choices: Output "Error: Invalid Vehicle Classification or Pass Code" and reject toll calculation.
+
+<===================================================================================>
+Question 11 — Multi-Branch Restaurant Kitchen Order Management & Customization Hub
+Difficulty: Hard
+Problem Statement:
+Develop an advanced order routing and bill calculation module for a multi-cuisine restaurant chain. The program must handle dining formats, course selections, item customization sub-menus, and conditional promotional discounts based on total bill thresholds.
+Requirements:
+1. Main Menu: Select Dining Mode (1: Dine-In, 2: Home Delivery, 3: Drive-Through Pickup).
+2. Sub-Menu (Nested Switch): Select Food Category based on dining mode (1: Continental & Grills, 2: Pan-Asian Stir Fry, 3: Artisan Desserts & Beverages).
+3. Item Customization & Add-ons: Within each food category, invoke secondary nested switch options for size/portion (Regular, Family Size, Chef's Special Platter) and dietary preferences (Standard, Extra Cheese/Spice, Vegan Substitution).
+4. Packaging & Service Fee Integration: Add corresponding service charges depending on the dining mode (Dine-in includes service tax, Delivery includes packaging & delivery partner fee).
+5. Promotional Validation (if-else): If the subtotal before taxes exceeds $75, apply a seasonal weekend coupon code discount; otherwise, charge standard billing rates.
+Inputs: Dining mode choice, food category choice, item sub-option choice, dietary preference code, coupon eligibility flag.
+Validation: Menu choice out-of-range must be caught gracefully.
+Expected Behavior for Invalid Choices: Print "Invalid Menu Code Selected" and restart the order selection loop.
+
+<===================================================================================>
+Question 12 — International Courier Service Dynamic Shipping Rate & Customs Duty Calculator
+Difficulty: Hard
+Problem Statement:
+An international logistics and cargo firm requires a shipping rate calculator that processes destination geographical zones, cargo package types, weight bracket sub-menus, and automated customs duty assessment rules using nested selections.
+Requirements:
+1. Main Menu: Select Destination Zone (1: Domestic Region, 2: Asia-Pacific Corridor, 3: Trans-Atlantic & Global).
+2. Sub-Menu (Nested Switch): Select Cargo Package Type (1: Document Envelope, 2: Standard Parcel Box, 3: Heavy Freight Pallet).
+3. Weight Bracket Slabs: Prompt user for package weight in kilograms and evaluate pricing across switch-managed weight tiers (Tier 1: < 2 kg, Tier 2: 2–10 kg, Tier 3: > 10 kg) with progressive per-kg scaling.
+4. Handling Surcharges: Select special handling option (1: Standard, 2: Fragile Handle With Care, 3: Temperature-Controlled Cold Chain).
+5. Customs Duty Validation (if-else): If the destination is international (Zones 2 or 3) and declared item value exceeds $500, automatically compute and append a standard 12% customs clearance duty to the final invoice.
+Inputs: Destination zone choice, package type choice, weight in kg, handling choice, declared item value.
+Validation: Weight and declared value must be positive numerical inputs.
+Expected Behavior for Invalid Choices: Display "Invalid Zone or Package Type Code" and abort quotation generation.
+
+<===================================================================================>
+Question 13 — State Electricity Board Smart Grid Load Shedding & Penalty Assessment Portal
+Difficulty: Hard
+Problem Statement:
+A power grid control system needs an administrative module to evaluate consumer sector load profiles, consumption boundary violations, and penalty assessments during peak grid stress periods using multi-layered switch logic and emergency override checks.
+Requirements:
+1. Main Menu: Select Consumer Sector (1: Heavy Industrial, 2: Commercial Enterprise, 3: Agricultural Pump Grid).
+2. Sub-Menu (Nested Switch): Select Load Profile Category (1: Continuous Production, 2: Single Shift Operation, 3: Seasonal Variable Load).
+3. Consumption Excess Slabs: Evaluate recorded monthly peak demand against sanctioned contract demand limits using switch-managed percentage overshoot tiers (Tier 1: 0–10% excess, Tier 2: 11–25% excess, Tier 3: > 25% excess).
+4. Penalty Rate Calculation: Apply sector-specific penalty multipliers per excess kilowatt-hour consumed.
+5. Emergency Grid Stress Override (if-else): Check system emergency state flag (1 for Red Alert, 0 for Normal). If Red Alert is active, double all calculated penalty tariffs across any industrial or commercial sector.
+Inputs: Consumer sector choice, load profile choice, sanctioned limit vs actual consumption numbers, emergency state flag.
+Validation: Recorded consumption cannot be less than zero.
+Expected Behavior for Invalid Choices: Output "Error: Invalid Sector Code or Profile Parameter" and clear execution state.
+
+<===================================================================================>
+Question 14 — Multiplex Premium Cinema Seating & Dynamic Snack Combo Reservation System
+Difficulty: Hard
+Problem Statement:
+Design an end-to-end ticketing and concession booking engine for a luxury multiplex cinema. The system must process auditorium screen formats, seating zone tiers, and integrated snack combo sub-menus, while applying loyalty membership discount validations.
+Requirements:
+1. Main Menu: Select Screen Format (1: IMAX 3D, 2: 4DX Sensory Screen, 3: Gold Class Luxury Lounge).
+2. Sub-Menu (Nested Switch): Select Seating Zone (1: Standard Recliners, 2: Executive Club Boxes, 3: Couple Sovereign Couches).
+3. Concession & Snack Integration: Prompt whether the user wants to add an exclusive snack combo (1: Popcorn & Soda Mega-Pack, 2: Nachos & Gourmet Dip Combo, 3: No Snacks). If a snack is chosen, invoke a secondary nested selection for size upgrades.
+4. Loyalty Club Verification (if-else): Check if the customer holds a VIP Black Card. If true, grant a 15% discount on the combined ticket and snack total; otherwise, charge standard retail pricing.
+5. Tax Surcharge Computation: Automatically append entertainment tax based on ticket pricing tiers.
+Inputs: Screen format choice, seating zone choice, snack combo choice, snack size code, VIP membership status.
+Validation: Option inputs must strictly fall within valid menu ranges.
+Expected Behavior for Invalid Choices: Print "Invalid Screen Format or Seating Zone Code" and terminate session.
+
+<===================================================================================>
+Question 15 — Autonomous Vehicle Fleet Diagnostic and Maintenance Scheduling Hub
+Difficulty: Hard
+Problem Statement:
+Create a diagnostic and maintenance scheduling hub for an autonomous electric vehicle fleet management platform. The system must route fault codes through vehicle powertrain models, diagnostic severity sub-menus, and automated technician dispatch priority rules.
+Requirements:
+1. Main Menu: Powertrain Architecture (1: BEV, 2: PHEV, 3: HFCV).
+2. Sub-Menu (Nested Switch): System Fault Category (1: Battery Thermal, 2: Motor Inverter, 3: Sensor Array).
+3. Severity Assessment Tier: Error severity code (1: Minor, 2: Degraded, 3: Critical Failure).
+4. Corrective Action & Dispatch Routing: Determine recommended shop action and technician priority code using switch cases.
+5. Safety Override Validation (if-else): If the vehicle reports a Critical System Failure in either the Battery or Sensor Array, automatically trigger an immediate remote vehicle immobilization command alongside high-priority emergency technician dispatch.
+Inputs: Powertrain type choice, fault category choice, severity code, active operational mileage input.
+Validation: Severity codes must be between 1 and 3. Invalid inputs must trigger default exception handlers.
+Expected Behavior for Invalid Choices: Output "Error: Unrecognized System Fault Code or Powertrain Type" and cancel dispatch order.
+<===================================================================================>
