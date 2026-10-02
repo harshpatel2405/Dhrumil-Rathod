@@ -1,0 +1,9 @@
+ternary 
+-------
+which requires three operands
+Symbol ->  ?:
+mini if_else 
+
+condition ? "true" : "false";
+
+
