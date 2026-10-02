@@ -1,0 +1,50 @@
+Loop 
+----
+a block of code can be used again and again till a particular condition is true 
+
+Steps
+-----
+1. Inialisation          -- only once
+2. Condition             -- till it gets false 
+3. Operational Part      -- till the condition is true 
+4. increment / decrement -- till the condition is true
+
+Types of Loops 
+--------------
+1. Entry - Controlled Loop  min : 0
+-> condition is checked first , if it is true , then logic is executed 
+                              , else , loop will not work     
+
+    a. for -- when number of iterations are known  
+
+        for(intialisation; condition; inc/dec)
+        {
+            operational part
+        }
+
+    b. while -- when number of iterations are not known
+        
+        intialisation;
+        while(condition)
+        {
+            // operational part 
+            // inc / dec
+        }
+    
+
+2. Exit - Controlled Loop min : 1 
+-> logic is executed first , and then condition is checked 
+    a. do..while 
+        when you want your logic to be executed before condition is checked 
+
+        intialisation;
+        do
+        {
+            // operational part 
+            // inc / dec
+        }  while(condition);
+
+
+<===========================>
+1. factors 
+2. digits 
