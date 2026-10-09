@@ -1,0 +1,26 @@
+Digits 
+-------
+5634 -> 5   6   3  4
+print 
+count 
+sum
+multiply 
+odd_even 
+reverse 
+palindrome 
+
+largest digit 
+smallest digit 
+second largest digit 
+increasing order , decreasing order , random order 
+
+
+armstrong 
+harshad number 
+evil number 
+twin number 
+krishnamurthy number 
+spy number 
+nievn number 
+
+
