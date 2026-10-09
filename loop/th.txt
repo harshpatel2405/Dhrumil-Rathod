@@ -47,4 +47,24 @@ Types of Loops
 
 <===========================>
 1. factors 
+-> if a number is divisible by any number , then they are factors of that numbers
+
+12 -> 1, 2 , 3, 4, 6 , 12
+<
+i < 12  ==> i <= n
+n  % i == 0
+12 % 1 = 0
+12 % 2 = 0
+12 % 3 = 0
+12 % 4 = 0
+12 % 5 = 2
+12 % 6 = 0
+12 % 7 = 5
+12 % 12 = 0
+
+        print , count , sum , multiplication, prime , perfect 
+
+
+
 2. digits 
+3. nested loops

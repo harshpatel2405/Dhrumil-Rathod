@@ -1,0 +1,11 @@
+1. Check whether a number has exactly three factors.
+Input: 25
+Output: Yes
+
+2. Print only the odd factors of a number.
+Input: 18
+Output: 1 3 9
+
+3. Print all factors of a number in reverse order.
+Input: 12
+Output: 12 6 4 3 2 1
