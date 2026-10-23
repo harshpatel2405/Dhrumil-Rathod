@@ -1,0 +1,14 @@
+Nested Loop 
+-----------
+loop - P 
+    loop - C 
+
+parent - 1 to 4 
+    child - 1 to  3 
+
+parent 1 child 1 2 3 
+parent 2 child 1 2 3 
+parent 3 child 1 2 3 
+parent 4 child 1 2 3 
+
+
